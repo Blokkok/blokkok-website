@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 
 import { ThemeProvider } from '@material-ui/core/styles';
-import Theme from './theme';
+import Theme from '../components/theme';
 
 function MyApp({ Component, pageProps }) {
   return (
