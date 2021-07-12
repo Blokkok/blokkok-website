@@ -73,7 +73,7 @@ export default function Home() {
 
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={handleDrawerClose} className={clsx(classes.menuButton, close && classes.hide)}>
+          <IconButton edge="start" className={clsx(classes.menuButton, close && classes.hide)} color="inherit" aria-label="menu" onClick={handleDrawerClose}>
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
