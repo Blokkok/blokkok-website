@@ -26,47 +26,141 @@
     
     <script async src="https://arc.io/widget.min.js#9aZ6St8Q"></script>
   </head>
-  <body>
-    <div class="container align-items-center" style="height: 100vh; align-items: center; display: flex;">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <img src="./img/screenshot-1.jpg" style="width: 55%;" class="float-end fload-md-start">
-        </div>
-
-        <div class="col-md-6">
-          <h3>Blokkok</h3>
-          <p>
-            Blokkok is a community-driven modular android application that can create android apps using block programming like scratch. Every component for Blokkok is modular, these modules can be loaded and unloaded at runtime, giving users freedom on what they want to do with this app. Create customizable blocks, Custom widgets, Custom manager, Custom project type, Custom everything, Anything you want with it!
-          </p>
-          <p>
-            <a type="button" class="btn btn-primary">Download</a>
-
-            <a class="btn btn-primary px-3" style="background-color: #333333;" href="#!" role="button">
-              <i class="fab fa-github"></i>
-            </a>
-
-            <a class="btn btn-primary px-3" style="background-color: #55acee;" href="#!" role="button">
-              <i class="fab fa-twitter"></i>
-            </a>
-
-            <a class="btn btn-primary px-3" style="background-color: #ed302f;" href="#!" role="button">
-              <i class="fab fa-youtube"></i>
-            </a>
-
-            <a class="btn btn-primary px-3" style="background-color: #ff4500;" href="#!" role="button">
-              <i class="fab fa-reddit"></i>
-            </a>
-
-            <a class="btn btn-primary px-3" style="background-color: #5865f2;" href="#!" role="button">
-              <i class="fab fa-discord"></i>
-            </a>
-
-            <a class="btn btn-primary px-3" style="background-color: #481449;" href="#!" role="button">
-              <i class="fab fa-slack-hash"></i>
-            </a>
-          </p>
+  <body data-mdb-spy="scroll" data-mdb-target="#navbarNav" data-mdb-offset="0" style="position: relative;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="box-shadow: none; background-color: #00aa58; transition: 300ms;">
+      <div class="container">
+        <a class="navbar-brand" href="#">Blokkok</a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contributors">Contributors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0; background-color: #00aa58; color: white; height: 65vh;" id="home">
+      <div class="container" style="height: 80vh; z-index: 1;">
+        <div class="row" style="height: 100%; justify-content: center;">
+          <div class="col-12 col-md-3" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+            <img src="./img/screenshot-1.jpg" style="width: 70%; box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; z-index: 1;">
+          </div>
+          <div class="col-12 col-md-5" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; height: 100%;">
+            <h3>Blokkok</h3>
+            <p>
+              Blokkok is a community-driven modular android application that can create android apps using block programming like scratch. Every component for Blokkok is modular, these modules can be loaded and unloaded at runtime, giving users freedom on what they want to do with this app. Create customizable blocks, Custom widgets, Custom manager, Custom project type, Custom everything, Anything you want with it!
+            </p>
+            <p>
+              <a type="button" class="btn btn-secondary">Download</a>
+  
+              <a class="btn btn-primary px-3" style="background-color: #333333;" href="#!" role="button">
+                <i class="fab fa-github"></i>
+              </a>
+  
+              <a class="btn btn-primary px-3" style="background-color: #55acee;" href="#!" role="button">
+                <i class="fab fa-twitter"></i>
+              </a>
+  
+              <a class="btn btn-primary px-3" style="background-color: #ed302f;" href="#!" role="button">
+                <i class="fab fa-youtube"></i>
+              </a>
+  
+              <a class="btn btn-primary px-3" style="background-color: #ff4500;" href="#!" role="button">
+                <i class="fab fa-reddit"></i>
+              </a>
+  
+              <a class="btn btn-primary px-3" style="background-color: #5865f2;" href="#!" role="button">
+                <i class="fab fa-discord"></i>
+              </a>
+  
+              <a class="btn btn-primary px-3" style="background-color: #481449;" href="#!" role="button">
+                <i class="fab fa-slack-hash"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="z-index: -1;">
+      <path fill="#00aa58" fill-opacity="1" d="M0,128L80,117.3C160,107,320,85,480,106.7C640,128,800,192,960,192C1120,192,1280,128,1360,96L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+    </svg>
+
+
+    <div class="container" id="features" style="padding-top: 8px;">
+      <h2 style="text-align: center;">Features</h2>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <div class="container" id="contributors" style="padding-top: 8px;">
+      <h2 style="text-align: center;">Contributors</h2>
     </div>
     
     <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
