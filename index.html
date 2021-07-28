@@ -26,7 +26,7 @@
     
     <script async src="https://arc.io/widget.min.js#9aZ6St8Q"></script>
   </head>
-  <body data-mdb-spy="scroll" data-mdb-target="#navbarNav" data-mdb-offset="0" style="position: relative;">
+  <body data-mdb-spy="scroll" data-mdb-target="#navbarNav" data-mdb-offset="0" style="position: relative;" id="scrollBar">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="box-shadow: none; background-color: #00aa58; transition: 300ms;">
       <div class="container">
         <a class="navbar-brand" href="#">Blokkok</a>
@@ -47,24 +47,27 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/download.html">Download</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid" style="padding: 0; background-color: #00aa58; color: white; height: 65vh;" id="home">
-      <div class="container" style="height: 80vh; z-index: 1;">
+    <div class="container-fluid hero" style="padding: 0; background-color: #00aa58; color: white; height: 70vh;" id="home">
+      <div class="container" style="height: 85vh; z-index: 1;">
         <div class="row" style="height: 100%; justify-content: center;">
-          <div class="col-12 col-md-3" style="display: flex; align-items: center; justify-content: center; height: 100%;">
-            <img src="./img/screenshot-1.jpg" style="width: 70%; box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; z-index: 1;">
+          <div class="col-12 col-md-3 hideOnSmall">
+            <img src="./img/screenshot-1.jpg" style="width: 70%; box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25); border-radius: 6px; z-index: 1;">
           </div>
-          <div class="col-12 col-md-5" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; height: 100%;">
+          <div class="col-12 col-md-5 centerOnSmall">
             <h3>Blokkok</h3>
             <p>
               Blokkok is a community-driven modular android application that can create android apps using block programming like scratch. Every component for Blokkok is modular, these modules can be loaded and unloaded at runtime, giving users freedom on what they want to do with this app. Create customizable blocks, Custom widgets, Custom manager, Custom project type, Custom everything, Anything you want with it!
             </p>
             <p>
-              <a type="button" class="btn btn-secondary">Download</a>
+              <a type="button" class="btn btn-secondary" href="/download.html">Download</a>
   
               <a class="btn btn-primary px-3" style="background-color: #333333;" href="#!" role="button">
                 <i class="fab fa-github"></i>
@@ -94,80 +97,74 @@
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="z-index: -1;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" style="z-index: -1;">
       <path fill="#00aa58" fill-opacity="1" d="M0,128L80,117.3C160,107,320,85,480,106.7C640,128,800,192,960,192C1120,192,1280,128,1360,96L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
     </svg>
 
 
-    <div class="container" id="features" style="padding-top: 8px;">
-      <h2 style="text-align: center;">Features</h2>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    <div class="container" id="features" style="padding-top: 24px;">
+      <h2 style="text-align: center; margin-bottom: 24px;">Features</h2>
+      
     </div>
-    <div class="container" id="contributors" style="padding-top: 8px;">
-      <h2 style="text-align: center;">Contributors</h2>
+
+    <div class="container" id="contributors" style="padding-top: 24px;">
+      <h2 style="text-align: center; margin-bottom: 24px;">Contributors</h2>
+
+      <div class="row" id="contributorList">
+        
+      </div>
     </div>
+
+    <div class="container" id="contact" style="padding-top: 24px; margin-bottom: 24px;">
+      <h2 style="text-align: center; margin-bottom: 24px;">Contact</h2>
+      
+      <div>
+        <div class="row ">
+          <div class="col-md-6">
+            <div class="form-outline">
+              <input type="email" id="formControlEmail" class="form-control form-control-lg" data-mdb-showcounter="true" maxlength="2048">
+              <label class="form-label" for="formControlEmail">Email</label>
+              <div class="form-helper"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-outline">
+              <input type="text" id="formControlSubject" class="form-control form-control-lg" data-mdb-showcounter="true" maxlength="256">
+              <label class="form-label" for="formControlSubject">Subject</label>
+              <div class="form-helper"></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-outline" style="margin-top: 24px;">
+          <textarea class="form-control form-control-lg" id="formControlMessage" rows="4" data-mdb-showcounter="true" maxlength="4096"></textarea>
+          <label class="form-label" for="formControlMessage">Message</label>
+          <div class="form-helper"></div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" style="margin-top: 24px;" onclick="sendMail()">Send</button>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3">
+        Copyright © 2021 <a class="text-dark" href="https://blokkok.ga/">Blokkok</a>
+      </div>
+    </footer>
+
+    <script>
+      var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+      if(isIE) {
+        document.body.innerHTML = "Dude... Upgrade your browser..."
+      }
+    </script>
     
     <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
 
+    <script src="./js/vibrant.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

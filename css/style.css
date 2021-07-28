@@ -17049,3 +17049,34 @@ fieldset:disabled .btn-group-vertical {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+*::selection {
+  background-color: #bf0455a9;
+  color: white;
+}
+
+.hideOnSmall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.centerOnSmall {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .hideOnSmall {
+    display: none;
+  }
+
+  .centerOnSmall {
+    align-items: center;
+    text-align: center;
+  }
+}
