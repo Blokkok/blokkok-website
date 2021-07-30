@@ -64,45 +64,65 @@
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" style="z-index: -1;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220" style="z-index: -1;">
       <path fill="#00aa58" fill-opacity="1" d="M0,128L80,117.3C160,107,320,85,480,106.7C640,128,800,192,960,192C1120,192,1280,128,1360,96L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
     </svg>
 
-    <div class="container">
-      <h1 style="text-align: center;">Features</h1>
-
-      <div class="features">
-        <div class="card">
-          <h2>Modular.</h2>
-          <p>
-            Plug in and out "modules" to remove, add, or modify the app.
-          </p>
-        </div>
-        <div class="card">
-          <h2>Easy to use.</h2>
-          <p>
-            Just crate a project and get coding, its easy.
-          </p>
-        </div>
-        <div class="card">
-          <h2>Built in store.</h2>
-          <p>
-            Download projects, modules, without importing them, it does it for you.
-          </p>
-        </div>
-        <div class="card">
-          <h2>Free & Open Source.</h2>
-          <p>
-            We made our app to be free and open source, licensed under GPLv3.
-          </p>
+    <div class="mainContent">
+      <div class="container" id="features">
+        <h1 style="text-align: center; margin-bottom: 24px;">Features</h1>
+  
+        <div class="features content">
+          <div class="card">
+            <h2>Modular.</h2>
+            <p>
+              Plug in and out "modules" to remove, add, or modify the app.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Easy to use.</h2>
+            <p>
+              Just crate a project and get coding, its easy.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Built-in store.</h2>
+            <p>
+              Download projects, modules, without importing them, it does it for you.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Free & Open Source.</h2>
+            <p>
+              We made our app to be free and open source, licensed under GPLv3.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <h1 style="text-align: center;">Features</h1>
-
-      modular, easy, idk
+  
+      <div class="container" style="margin-top: 24px;">
+        <h1 style="text-align: center; margin-bottom: 24px;">Contributors</h1>
+  
+        <div class="content">
+          <div class="card">
+            This section is coming soon&trade;.
+          </div>
+        </div>
+      </div>
+  
+      <div class="container" id="contact" style="margin-top: 24px;">
+        <h1 style="text-align: center; margin-bottom: 24px;">Contact</h1>
+  
+        <div class="content">
+          <form action="none">
+            <input type="email" placeholder="Email" id="formControlEmail">
+            <input type="text" placeholder="Subject" id="formControlSubject">
+            <textarea type="text" placeholder="Content" id="formControlMessage" rows="4"></textarea>
+    
+            <button class="button" type="button" onclick="BlokkokWebApp.sendMail()">Send</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <div class="footer">
