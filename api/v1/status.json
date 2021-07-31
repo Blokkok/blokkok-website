@@ -1,0 +1,13 @@
+{
+  "mainServer": "Firebase1",
+  "alternativeServers": [
+    "Firebase1"
+  ],
+  "serverStatus": 1,
+  "serverSatuses": [
+    {
+      "serverName": "Firebase1",
+      "serverStatus": 1
+    }
+  ]
+}
