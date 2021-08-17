@@ -23,6 +23,18 @@ body {
   --shadowColor: rgb(0 0 0 / 25%);
 }
 
+/* A TAGS */
+
+a {
+  text-decoration: none;
+  color: #bf0455;
+}
+
+a:hover {
+  color: #aa0051;
+  text-decoration: underline;
+}
+
 /* -------- NAVBAR -------- */
 
 .navBar {
@@ -186,16 +198,6 @@ body {
 }
 
 /* BUTTONS */
-
-a {
-  text-decoration: none;
-  color: #bf0455;
-}
-
-a:hover {
-  color: #aa0051;
-  text-decoration: underline;
-}
 
 .button {
   border: 1px solid transparent;
