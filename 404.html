@@ -24,6 +24,15 @@
     <link rel="icon" href="./img/favicon.png">
 
     <script async src="https://arc.io/widget.min.js#9aZ6St8Q"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLHE9301B9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TLHE9301B9');
+    </script>
   </head>
   <body>
     <nav class="navBar">
@@ -53,16 +62,11 @@
       </div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
-
-    <script src="./js/firebase.js"></script>
     <script src="./js/main.js"></script>
     
     <script>
       const randomTextItem  = $('.randomText');
-      const randomTextTexts = [ 'Looks like you had a wrong turn.', 'Oops.. Someone deleted this page', 'A blackhole ate the page.', 'TheClashFruit did a typo in the page name.', '"--- --- .--. ... .-.-.-" means "Oops."' ];
+      const randomTextTexts = [ 'Looks like you had a wrong turn.', 'Oops.. Someone deleted this page.', 'A black hole ate the page.', 'TheClashFruit did a typo in the page name.', '"--- --- .--. ... .-.-.-" means "Oops."' ];
       
       randomTextItem.innerHTML = randomTextTexts[Math.floor(Math.random() * randomTextTexts.length)];
     </script>

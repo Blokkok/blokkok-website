@@ -42,7 +42,7 @@ const BlokkokWebApp = {
       ]
     }
   
-    request.open("POST", "https://canary.discord.com/api/webhooks/869942680241725490/JkXa24e5OS9hHi1N749OvQ3WTC0yjn02rxCuWWVspcM-ol6TVOfd_Wxu8xl92kEEqqVL");
+    request.open("POST", "https://api.blokkok.ga/v1/sendContact");
     request.setRequestHeader('Content-type', 'application/json');
     request.send(JSON.stringify(params));
   
