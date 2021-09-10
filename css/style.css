@@ -13,10 +13,22 @@
   color: white;
 }
 
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bf0455a9;
+  margin-right: 4px;
+}
+
 body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
+
+  overflow-y: overlay;
 }
 
 :root {
@@ -260,7 +272,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   width: 90%;
 
   display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-columns: 24.2% 24.2% 24.2% 24.2%;
   column-gap: 10px;
   justify-content: center;
 }

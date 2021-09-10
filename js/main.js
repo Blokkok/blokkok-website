@@ -49,6 +49,24 @@ const BlokkokWebApp = {
     setTimeout(() => {
       isSendable = true;
     }, 10000);
+  },
+  getContrubutors: () => {
+    fetch('https://api.github.com/repos/Blokkok/blokkok/contributors')
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(user => {
+          const contributorsCard = $('#contributors');
+
+          const userDiv = document.createElement('a');
+
+          userDiv.setAttribute('href', user.html_url);
+          userDiv.setAttribute('style', 'height: 70px; width: 70px; margin-right: 8px;');
+
+          userDiv.innerHTML = `<img src="${user.avatar_url}" style="border-radius: 100%;" height="70px">`;
+
+          contributorsCard.appendChild(userDiv);
+        });
+      });
   }
 }
 
@@ -56,8 +74,8 @@ document.addEventListener('scroll', function(e) {
   console.log(window.scrollY);
 
   if(window.scrollY <= 30) {
-    document.querySelector('.navBar').setAttribute('class', 'navBar');
+    $('.navBar').setAttribute('class', 'navBar');
   } else {
-    document.querySelector('.navBar').setAttribute('class', 'navBar navBarScrolled');
+    $('.navBar').setAttribute('class', 'navBar navBarScrolled');
   }
 });
