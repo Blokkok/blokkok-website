@@ -134,6 +134,34 @@ a:hover {
   color: #fff;
 }
 
+.navBarNotice {
+  padding: 0.75rem;
+  background-color: #e21b1b;
+
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navBarNotice > * {
+  align-self: center;
+}
+
+.navBarNotice > * > a {
+  color: white;
+  text-decoration: underline;
+}
+
+.noticeClose {
+  cursor: pointer;
+  color: #470f0f;
+  font-size: 1.5rem;
+}
+
 /* HERO */
 
 .headerHero {
@@ -358,6 +386,11 @@ input:focus, textarea:focus {
 
   .navBarToggle {
     display: flex;
+  }
+
+  .navBarNotice {
+    flex-direction: column;
+    gap: 0;
   }
 
   .headerHero, .heroMain {

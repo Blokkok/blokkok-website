@@ -79,3 +79,5 @@ document.addEventListener('scroll', function(e) {
     $('.navBar').setAttribute('class', 'navBar navBarScrolled');
   }
 });
+
+const closeNotice = () => { $('.navBarNotice').style.display = 'none'; }
